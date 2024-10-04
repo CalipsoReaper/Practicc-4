@@ -43,7 +43,7 @@ list_processes() {
 log_file=""
 error_file=""
 
-while getopts ":u:p:hl:e:-:" opt; do
+while getopts ":uphle:-:" opt; do
     case $opt in
         u)
             list_users
