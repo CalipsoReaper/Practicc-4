@@ -107,7 +107,7 @@ if [[ -n "$error_file" ]]; then
     exec 2> "$error_file"
 fi
 
-trap "echo 'чини работяга'>&2" DEBUG
+trap "echo 'ой-ой ошибка'>&2" DEBUG
 # Если не переданы аргументы, выводим справку
 if [[ -z "$log_file" && -z "$error_file" ]]; then
     show_help
