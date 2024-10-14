@@ -29,7 +29,7 @@ list_users() {
     done < /etc/passwd | sort
 }
 
-# Функция для вывода запущенных процессов
+# Функция для вывода запущенных процессов 1
 list_processes() {
     if [[ -n "$log_file" ]]; then
         exec > "$log_file"
@@ -38,7 +38,7 @@ list_processes() {
     ps -e --format pid,cmd --sort pid
 }
 
-# Основная часть программы
+# Основа
 log_file=""
 error_file=""
 
